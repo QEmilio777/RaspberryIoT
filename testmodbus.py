@@ -1,7 +1,7 @@
 from pymodbus.client import ModbusTcpClient
 import time
 
-IP = "192.168.47.30"
+IP = "192.168.173.30"
 PORT = 502
 COIL_LED = 0
 
@@ -35,5 +35,6 @@ except KeyboardInterrupt:
     pass
 
 finally:
+    client.write_coil(COIL_LED, 0)
     client.close()
     print("Programa finalizado")
