@@ -22,6 +22,7 @@ print("Conexion establecida, leyendo cada 3 segundos\n")
 try:
     
     while True:
+        # leer los registros
         rr = client.read_holding_registers(REG_TEMP, count=2, device_id=1)
         
         if rr.isError():
