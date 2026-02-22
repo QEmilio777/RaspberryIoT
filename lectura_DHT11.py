@@ -4,7 +4,7 @@ import time
 
 
 # Datos para la conexion
-IP = "192.168.173.30"
+IP = "192.168.6.30"
 PORT = 502
 
 #definir registros
