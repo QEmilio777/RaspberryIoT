@@ -7,7 +7,7 @@ from pymodbus.client import ModbusTcpClient # protoclo modbus
 from fastapi import FastAPI, WebSocket #Para montar el servidor
 from fastapi.responses import HTMLResponse #Respuesta de parte del seridor
 #Datos para la conexion
-IP = "192.168.173.30"
+IP = "192.168.214.30"
 PORT = 502
 
 #Definición de registros
@@ -63,7 +63,7 @@ async def websocket_endpoint(ws: WebSocket):
         await ws.close()
         return
 
-    print("Conexión establecida. Leyendo cada 5 segundos \n")
+    print("Conexión establecida. Leyendo cada 2 segundos \n")
 
     try:
         while True:
